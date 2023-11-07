@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage ('Test Stage'){
             steps {
-                echo 'Testing the project ...'
+                sh('./mvnw test')
             }
         }
         stage ('Build Stage'){
