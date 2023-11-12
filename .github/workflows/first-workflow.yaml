@@ -1,0 +1,19 @@
+name: First workflow example
+on:
+  push:
+    branches:
+      - main
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    name: My first job
+    steps:
+      - name: Run my first job
+        run: echo "My first job"
+  second-job:
+    runs-on: ubuntu-latest
+    name: My second job
+    needs: first-job
+    steps:
+      - name: Run my second job
+        run: echo "My second job"
