@@ -15,5 +15,7 @@ jobs:
     name: My second job
     needs: first-job
     steps:
-      - name: Run my second job
-        run: echo "My second job"
+      - name: Run my second job part 1
+        run: echo "My second job -- 1"
+      - name: Run my second job part 2
+        run: echo "My second job -- 1"
