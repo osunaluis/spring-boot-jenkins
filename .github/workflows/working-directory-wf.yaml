@@ -1,0 +1,11 @@
+name: Working with directories workflow
+
+on: push
+
+jobs:
+  working-directory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: ls
+        
