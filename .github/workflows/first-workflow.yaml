@@ -13,7 +13,7 @@ jobs:
   second-job:
     runs-on: ubuntu-latest
     name: My second job
-    needs: first-job
+    needs: first-job #Job dependency, it could be a tring or an array of strings
     steps:
       - name: Run my second job part 1
         run: echo "My second job -- 1"
