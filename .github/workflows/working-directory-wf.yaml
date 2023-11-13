@@ -7,5 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
-        run: ls
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
         
