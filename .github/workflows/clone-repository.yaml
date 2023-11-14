@@ -1,0 +1,16 @@
+name: Clone repository
+on: push
+jobs:
+  clone-repository-from-git:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List all files in current directory
+        run: ls -a
+      - name: Clone repository in current wd
+        run: |
+          git init
+          git remote add origin https://github.com/osunaluis/spring-boot-jenkins.git
+          git fetch origin
+          git checkout main
+      - name: List after cloning repository
+        run: ls -a
