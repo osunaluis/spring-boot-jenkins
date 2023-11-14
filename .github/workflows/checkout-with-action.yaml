@@ -1,0 +1,13 @@
+name: Checkout with actions
+on: push
+jobs:
+  checkout-with-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initial step
+        run: echo "Initializing repository..."
+      - name: Checkout repository
+        run: echo "changing repository..."
+      - uses: actions/checkout@v4
+      - name: echo "finished checking out"
+        run: echo "Finished..."
