@@ -1,0 +1,11 @@
+name: On pull request event workflow
+on:
+  pull_request:
+    types: [opened, closed]
+
+jobs:
+  pull-request-event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: On pull request do something
+        run: echo $GITHUB_REF
