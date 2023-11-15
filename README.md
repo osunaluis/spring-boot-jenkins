@@ -6,3 +6,5 @@ Spring boot project for testing jenkins pipeline
 ACTION_RUNNER_DEBUG = true - secret
 ACTION_STEP_DEBUG = true -variable
 
+Some changes for pull request test
+
