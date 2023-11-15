@@ -1,0 +1,10 @@
+name: Events workflow
+on: push
+jobs:
+  on-push-event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check env variables for push event
+        run: |
+          echo "${GITHUB_SHA}"
+          echo "${GITHUB_REF}"
