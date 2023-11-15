@@ -4,6 +4,8 @@ jobs:
   on-push-event:
     runs-on: ubuntu-latest
     steps:
+      - name: Check env variables
+        run: env
       - name: Check env variables for push event
         run: |
           echo $GITHUB_SHA
