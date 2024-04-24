@@ -12,4 +12,9 @@ class JenkinsApplicationTests {
 		Assertions.assertTrue(true);
 	}
 
+	@Test
+	void sampleTest(){
+		Assertions.assertTrue(false);
+	}
+
 }
